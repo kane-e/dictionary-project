@@ -5,11 +5,12 @@ import Result from "./Result.js";
 
 export default function Search (){
     const [word, setWord] = useState("");
+    const [result, setResult] = useState (null);
 
 
     function handleResponse(response){
-      setWord(response.data[0].word);
-   
+      setResult(response.data[0]); 
+      console.log(response.data[0]);
     }
 
     function handleSubmit(event){
@@ -30,7 +31,7 @@ export default function Search (){
               <input type="search" onChange={updateSearch} autoFocus={true} placeholder="Type a word"/>
               <input type="submit" value="Search" id="submit-button" style={{backgroundColor:"pink", borderRadius: "5px"}} />
           </form>
-         <Result word={word}/>
+         <Result result={result}/>
       </div>
     )
 }
