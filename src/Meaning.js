@@ -1,10 +1,12 @@
 import React from "react";
-
+import "./Meaning.css";
 
 export default function Meaning(props){
     return(
     <div className ="Meaning">
-    <h2>{props.meaning.partOfSpeech}</h2>
+    <div className="container">
+      
+    <h2 style={{ textTransform: 'capitalize'}}>{props.meaning.partOfSpeech}</h2>
 
        {props.meaning.definitions.map(function(definition, index){
                     return(
@@ -18,8 +20,9 @@ export default function Meaning(props){
                         </div>
                     );
                 })}
-                 
+               
          </div> 
+         </div>
     )       
         }
    

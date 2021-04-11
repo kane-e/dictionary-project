@@ -27,11 +27,16 @@ export default function Search (){
 
     return(
       <div className="Search">
+        <div className="container">
+          <div className= "input">
+          <small>What does Jasper know?</small>
           <form onSubmit={handleSubmit}>
               <input type="search" onChange={updateSearch} autoFocus={true} placeholder="Type a word"/>
               <input type="submit" value="Search" id="submit-button" style={{backgroundColor:"pink", borderRadius: "5px"}} />
           </form>
+          </div>
          <Result result={result}/>
+      </div>
       </div>
     )
 }
