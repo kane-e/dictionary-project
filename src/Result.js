@@ -15,15 +15,20 @@ if(props.result){
             </h1>
             
             <div>{props.result.phonetics[0].text}</div>
-            <a href={props.result.phonetics[0].audio} target="_blank">audio</a>
+            <a href={props.result.phonetics[0].audio} target="_blank" rel="noreferrer">audio</a>
             </div>
+           
+            <div className="meaning-wrapper">
                 {props.result.meanings.map(function(meaning, index){
                     return(
                         <div key = {index}>
                             <Meaning meaning = {meaning}/>
                         </div>
+                        
                     );
                 })} 
+                </div>
+                
         
         </div>
         </div>
