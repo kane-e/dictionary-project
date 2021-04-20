@@ -21,8 +21,10 @@ if(props.result){
             <div className="meaning-wrapper">
                 {props.result.meanings.map(function(meaning, index){
                     return(
-                        <div key = {index}>
+                        <div className= "row" key = {index}>
+                            <div className = "col">
                             <Meaning meaning = {meaning}/>
+                            </div>
                         </div>
                         
                     );

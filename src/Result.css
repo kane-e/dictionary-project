@@ -8,9 +8,6 @@
 
 .Result .meaning-wrapper {
   border: 2px solid transparent;
-  box-shadow: 10px 10px 10px pink;
-  border-radius: 5px;
-
   margin: 30px auto;
   display: flex;
 }
