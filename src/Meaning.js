@@ -18,6 +18,9 @@ export default function Meaning(props){
 
                              {definition.example}
                            </em>
+                           <em>
+                             {definition.synonyms}
+                           </em>
                         </div>
                     );
                 })}
